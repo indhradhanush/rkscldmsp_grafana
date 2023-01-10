@@ -14,7 +14,6 @@ Grafana, an open-source tool is implemented as a separate system in a Linux mach
 To get the data from Ruckus MSP Cloud to Influxdb, Python program will be used. Python will retrieve data using Ruckus MSP API and moderate it before inserting into Influxdb. 
 
 ![System Design](https://github.com/indhradhanush/rkscldmsp_grafana/blob/main/docs/sysdes.PNG?raw=true)
-`System Design <https://github.com/indhradhanush/rkscldmsp_grafana/blob/main/docs/sysdes.PNG?raw=true>`_.
 
 `Learn more <https://ruckus.cloud>`_.
 
