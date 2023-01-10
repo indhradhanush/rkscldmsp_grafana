@@ -8,7 +8,7 @@ Grafana helps solving the MSP related problem where an MSP admin can do the foll
 2.	View limited monitoring information quickly about a tenant without must go to MSP inventory page.
 3.	Kiosk requirement – MSP admins often require Kiosk screen to show in a centralized NOC display, which allows quick glance of status of devices. Change settings token_rotation_interval_minutes and login_maximum_inactive_lifetime_days in Grafana.ini 
 
-System Design
+<b>System Design</b>
 
 Grafana, an open-source tool is implemented as a separate system in a Linux machine. This is only a visualization tool, so it would need a time series database (TSDB) to visualize. In this guide dog we will use Influxdb as the TSDB.
 To get the data from Ruckus MSP Cloud to Influxdb, Python program will be used. Python will retrieve data using Ruckus MSP API and moderate it before inserting into Influxdb. 
