@@ -15,6 +15,6 @@ To get the data from Ruckus MSP Cloud to Influxdb, Python program will be used. 
 
 ![System Design](https://github.com/indhradhanush/rkscldmsp_grafana/blob/main/docs/sysdes.PNG?raw=true)
 
-`Learn more <https://ruckus.cloud>`
+![Learn more](https://ruckus.cloud)
 
 ---------------
