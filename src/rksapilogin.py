@@ -9,7 +9,6 @@ from configure import *
 import keyring
 
 cred = keyring.get_credential(rks_domain, rks_username)
-print(f"Password for username {cred.username} in namespace {rks_domain} is {cred.password}")
 rks_password=cred.password
 
 def apilogin(session):
