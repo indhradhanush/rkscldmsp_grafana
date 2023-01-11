@@ -20,22 +20,18 @@
 <br />
 <div align="center">
   <a href="https://github.com/indhradhanush/rkscldmsp_grafana">
-    <img src="docs/sysdes.PNG" alt="Logo" width="80" height="80">
+    <img src="docs/ruckusgrafanalogo.PNG" alt="Logo" width="388" height="327">
   </a>
 
   <h3 align="center">Ruckus MSP Cloud monitoring with Grafana</h3>
 
   <p align="center">
-    This project is to pull data from Ruckus Cloud API and store in influxDB.</BR>
-    Grafana helps solving the MSP related problem where an MSP admin can do the following.</BR>
-    1.	Single Dashboard to view all device status irrespective of tenant. </BR>
-    2.	View limited monitoring information quickly about a tenant without must go to MSP inventory page.</BR>
-    3.	Kiosk requirement – MSP admins often require Kiosk screen to show in a centralized NOC display, which allows quick glance of status of devices. Change settings token_rotation_interval_minutes and login_maximum_inactive_lifetime_days in Grafana.ini 
+    This project is to pull data from Ruckus MSP Cloud API inventory and store in influxDB. Finally influxdb data is used as data source for Grafana. </BR> 
     <br />
     <a href="https://github.com/indhradhanush/rkscldmsp_grafana/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/">View Demo</a>
+    <a href="#demo-pod">View Demo</a>
     ·
     <a href="https://github.com/indhradhanush/rkscldmsp_grafana/issues">Report Bug</a>
     ·
@@ -52,7 +48,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#demo-pod">Demo</a></li>
       </ul>
     </li>
     <li>
@@ -76,29 +72,49 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://ruckus.cloud)
 
-Grafana, an open-source tool is implemented as a separate system in a Linux machine. This is only a visualization tool, so it would need a time series database (TSDB) to visualize. In this guide dog we will use Influxdb as the TSDB.
+Ruckus MSP Cloud is a platform for managed service providers to manage and monitor their customers' Ruckus networks. It provides tools for remote network performance monitoring, account and billing management, and reporting.
+
+Grafana is an open-source platform for data visualization and monitoring. It allows you to create, explore, and share dashboards and supports multiple backends for storing time series data. It is commonly used for DevOps, IoT, and real-time analytics.
+
+ Grafana helps solving the MSP related problem where an MSP admin can do the following.</BR>
+    1.	Single Dashboard to view all device status irrespective of tenant. </BR>
+    2.	View limited monitoring information quickly about a tenant without must go to MSP inventory page.</BR>
+    3.	Kiosk requirement – MSP admins often require Kiosk screen to show in a centralized NOC display, which allows quick glance of status of devices. Change settings token_rotation_interval_minutes and login_maximum_inactive_lifetime_days in Grafana.ini
+    Grafana, an open-source tool is implemented as a separate system in a Linux machine. This is only a visualization tool, so it would need a time series database (TSDB) to visualize. In this guide dog we will use Influxdb as the TSDB.
 To get the data from Ruckus MSP Cloud to Influxdb, Python program will be used. Python will retrieve data using Ruckus MSP API and moderate it before inserting into Influxdb.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a href="https://github.com/indhradhanush/rkscldmsp_grafana">
-    <img src="docs/sysdes.PNG" alt="Logo" width="1380" height="305">
+### Demo pod
+
+Screenshots of the successful installation of Grafana, Python and Influx will result the following:
+
+<a href="https://grafana.com/grafana/dashboards/17847">
+    <img src="docs/Home.png" alt="Logo" >
 </a>
 
-### Built With
+* <a href="https://grafana.com/grafana/dashboards/17847">RUCKUS MSP Cloud Dashboard - Home : https://grafana.com/grafana/dashboards/17847</a>
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<a href="https://grafana.com/grafana/dashboards/17852">
+    <img src="docs/Tenant.png" alt="Logo" >
+</a>
 
-* [![Python][python.com]][python-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* <a href="https://grafana.com/grafana/dashboards/17852">RUCKUS MSP Cloud Dashboard - Tenant : https://grafana.com/grafana/dashboards/17852</a>
+
+<a href="https://grafana.com/grafana/dashboards/17853">
+    <img src="docs/Venue.png" alt="Logo" >
+</a>
+
+* <a href="https://grafana.com/grafana/dashboards/17853">RUCKUS MSP Cloud Dashboard - Venue : https://grafana.com/grafana/dashboards/17853</a>
+
+<a href="https://grafana.com/grafana/dashboards/17854">
+    <img src="docs/device.png" alt="Logo" >
+</a>
+
+* <a href="https://grafana.com/grafana/dashboards/17854">RUCKUS MSP Cloud Dashboard - Devices : https://grafana.com/grafana/dashboards/17854</a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,9 +129,9 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* python3
   ```sh
-  npm install npm@latest -g
+  python3 app.py
   ```
 
 ### Installation
@@ -238,7 +254,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: docs/sysdes.PNG
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
