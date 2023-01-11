@@ -11,7 +11,6 @@ import keyring
 
 flux_cred = keyring.get_credential(influx_host, influx_username)
 influx_password=flux_cred.password
-print(influx_password)
 
 tenant_id = ""
 
