@@ -177,6 +177,8 @@ To run this python project, run the app.py which is the main file of this projec
 python3 src/app.py
 ```
 
+Install and run Grafana Dashboards. Dashboards ID are 17847, 17852, 17853, and 17854 from https://grafana.com/grafana/dashboards/
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -233,8 +235,15 @@ Project Link: [https://github.com/indhradhanush/rkscldmsp_grafana](https://githu
 <!-- LINKS -->
 ## LINKS
 
-* [RUCKUS Cloud](https://ruckus.cloud)
+Dashboards from Grafana marketplace: 
+* [Home - https://grafana.com/grafana/dashboards/17847](https://grafana.com/grafana/dashboards/17847)
+* [Tenants - https://grafana.com/grafana/dashboards/17852](https://grafana.com/grafana/dashboards/17852)
+* [Venues - https://grafana.com/grafana/dashboards/17853](https://grafana.com/grafana/dashboards/17853)
+* [Devices - https://grafana.com/grafana/dashboards/17854](https://grafana.com/grafana/dashboards/17854) 
 
+
+* [RUCKUS Cloud](https://ruckus.cloud)
+* [About RUCKUS Cloud](https://www.commscope.com/ruckuscloud)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
