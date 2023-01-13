@@ -29,7 +29,7 @@
   <p align="center">
     This project is to pull data from Ruckus MSP Cloud API inventory and store in influxDB. Finally influxdb data is used as data source for Grafana. </BR> 
     <br />
-    <a href="https://github.com/indhradhanush/rkscldmsp_grafana/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://support.ruckuswireless.com/documents/4386"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#demo-pod">View Demo</a>
@@ -172,6 +172,8 @@ At the location of choice of MSP admin, unzip the rkscldmsp_grafana.zip. It shou
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+* [Installation Guide](https://support.ruckuswireless.com/documents/4386)
+
 To run this python project, run the app.py which is the main file of this project. Before running this make sure all the pre-requisites are met. Python script outputs the data while inserting into InfluxDB. This info are for troubleshooting purposes. 
 ```py
 python3 src/app.py
@@ -234,6 +236,7 @@ Project Link: [https://github.com/indhradhanush/rkscldmsp_grafana](https://githu
 
 <!-- LINKS -->
 ## LINKS
+* [Installation Guide](https://support.ruckuswireless.com/documents/4386)
 
 Dashboards from Grafana marketplace: 
 * [Home - https://grafana.com/grafana/dashboards/17847](https://grafana.com/grafana/dashboards/17847)
