@@ -18,9 +18,10 @@ def apilogin(session):
     respjson = resp.json()
     if resp.status_code == 200:
         tid=respjson['tenantId']
+        jw_token=respjson['jwt']
         print('Tenant:', tid)
-        print('API-KEY:', resp.json()['API-KEY'])
-        return tid
+        print('JWT:', resp.json()['jwt'])
+        return tid,jw_token
     else:
         print("Login failed")
         exit()
