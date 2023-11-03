@@ -226,7 +226,7 @@ Distributed under the Apache License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@iamkarthikkrish](https://twitter.com/iamkarthikkrish)
+Karthikeyan Krish - [@iamkarthikkrish](https://twitter.com/iamkarthikkrish)
 
 Project Link: [https://github.com/indhradhanush/rkscldmsp_grafana](https://github.com/indhradhanush/rkscldmsp_grafana)
 
