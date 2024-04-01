@@ -36,7 +36,14 @@ def in_influx_allap(r1,totalcount):
         print('Customer_Name=',x['customerName'])
         print('Venue_Name=',x['venueName'])
         print('Serial_No=',x['serialNumber'])
-        print('Status=',devicestatus_grafana(x['deviceStatus']))
+        #print('Status=',devicestatus_grafana(x['deviceStatus']))
+
+        if x.get('deviceStatus'):
+            print('Status=',devicestatus_grafana(x['deviceStatus']))
+            device_status=devicestatus_grafana(x['deviceStatus'])
+        else:
+            device_status="Invalid"
+            print('Status=',device_status)
 
         if x.get('deviceType'):
             if x['deviceType']=='DVCNWTYPE_SWITCH':
@@ -117,6 +124,6 @@ def in_influx_allap(r1,totalcount):
             print('config_Status=None')
             config_Status='None'
 
-        MySeriesHelper(Device_Name=x['name'],Device_type=device_type,Device_Model=device_model,Dev_fw=fw_version,Serial_No=x['serialNumber'],Device_MAC=devmacaddress,Device_IPaddr=devipaddress,Customer_Name=x['customerName'],Last_Seen=lastseen,Status=devicestatus_grafana((x['deviceStatus'])),Severity=device_severity,ConnectionStatus=connection_Status,ConfigStatus=config_Status,Uptime=uptime,Venue_Name=x['venueName'], value=1)
+        MySeriesHelper(Device_Name=x['name'],Device_type=device_type,Device_Model=device_model,Dev_fw=fw_version,Serial_No=x['serialNumber'],Device_MAC=devmacaddress,Device_IPaddr=devipaddress,Customer_Name=x['customerName'],Last_Seen=lastseen,Status=device_status,Severity=device_severity,ConnectionStatus=connection_Status,ConfigStatus=config_Status,Uptime=uptime,Venue_Name=x['venueName'], value=1)
     MySeriesHelper.commit()
     print("Committed to InfluxDB")
