@@ -7,9 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-[stars-shield]: https://img.shields.io/github/stars/chingu-voyages/moonshot-chingu-quiz.svg?style=for-the-badge
-
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
