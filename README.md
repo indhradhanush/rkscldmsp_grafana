@@ -259,7 +259,7 @@ Dashboards from Grafana marketplace:
 [contributors-url]: https://github.com/indhradhanush/rkscldmsp_grafana/graphs/contributors
 [forks-shield]: https://img.shields.io/badge/FORKS-2-<COLOR>.svg
 [forks-url]: https://github.com/indhradhanush/rkscldmsp_grafana/network/members
-[stars-shield]: https://img.shields.io/badge/STARS-2-<COLOR>.svg
+[stars-shield]: https://img.shields.io/badge/STARS-6-<COLOR>.svg
 [stars-url]: https://github.com/indhradhanush/rkscldmsp_grafana/stargazers
 [issues-shield]: https://img.shields.io/badge/ISSUES-0-<COLOR>.svg
 [issues-url]: https://github.com/indhradhanush/rkscldmsp_grafana/issues
